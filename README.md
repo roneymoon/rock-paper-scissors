@@ -35,7 +35,7 @@ Welcome to the **Rock-Paper-Scissors** game! This is a classic hand game that ha
 
 ## 📸 Screenshots
 
-![Rock-Paper-Scissors Screenshot](./screenshots/screenshot.png)
+![Rock-Paper-Scissors Screenshot](https://rock-paper-scissors-mu-five.vercel.app/)
 
 ## 🤝 Contributing
 
