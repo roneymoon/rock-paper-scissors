@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+  </head>
+  <body class="bg-slate-200">
+    <div class="card relative bg-blue-400 rounded-2xl shadow-2xl flex flex-col w-[400px] h-[33.7rem] ml-[35%] mt-[5rem] pt-[1.5rem] p-[2rem]">
+      <h1 class="heading font-bold text-blue-950 text-3xl text-center">Rock Paper Scissors</h1>
+      <p class="sub-heading font-semibold text-blue-100 text-xl text-center mt-5">Choose Anything!</p>
+      <div class="choices flex flex-row space-x-[0.8rem] relative">
+        <div class="block w-[10rem] h-[5rem]"></div>
+        <button class=" rockbutton flex flex-col text-[2.5rem] cursor-pointer absolute left-4 top-[1rem] bg-blue-200 w-[80px] h-[64px] items-center rounded-xl hover:w-[83px] hover:h-[67px] hover:transition-all hover:duration-150 shadow-lg  hover:bg-blue-100 hover:shadow-xl hover:shadow-blue-300 active:w-[80px] active:[64px]">
+          👊
+        </button>
+        <button class="paperbutton flex flex-col  text-[2.5rem] cursor-pointer absolute top-[1rem] right-[8rem] bg-blue-200 w-[80px] h-[64px] items-center rounded-xl hover:w-[83px] hover:h-[67px] hover:transition-all hover:duration-150 shadow-lg  hover:bg-blue-100 hover:shadow-xl hover:shadow-blue-300  active:w-[80px] active:[64px]">
+          ✋
+        </button>
+        <button class="scissorbutton flex flex-col text-[2.5rem] cursor-pointer absolute top-[1rem] right-[1.8rem] bg-blue-200  w-[80px] h-[64px] items-center rounded-xl hover:w-[83px] hover:h-[67px] hover:transition-all hover:duration-150 shadow-lg hover:bg-blue-100 hover:shadow-xl hover:shadow-blue-300  active:w-[80px] active:[64px]">
+          ✌️
+        </button>
+      </div>
+
+      <div class="computer-move font-semibold text-blue-100 text-xl text-center mt-7">
+        Computer Move
+        <div class=" block h-[3rem] pt-1 text-[2.5rem] mt-3"><span class="computer-icon hidden">🤖</span><span class="computer-move-value">✌️</span></div>
+      </div>
+
+      <div class="flex flex-row space-x-[6.1rem]">
+        <div class="user-score-box bg-blue-100 flex flex-col w-[120px] h-[60px] rounded-lg">
+          <p class="text-center text-lg font-bold text-gray-600">Name</p>
+          <div class="user-score text-center text-lg font-semibold">0</div>
+        </div>
+        <div class="computer-score-box bg-blue-100 flex flex-col w-[120px] h-[60px] rounded-lg">
+          <p class="text-center text-lg font-bold text-gray-600">Computer</p>
+          <div class="comp-score text-center text-lg font-semibold">0</div>
+        </div>
+      </div>
+
+      
+      <div class="result mt-[2rem] relative">
+        <div class="result-card bg-blue-100 h-[70px] ml-5 w-[300px] rounded-xl absolute">
+          <p class="text-center text-blue-600 font-bold text-3xl">Winning score</p>
+          <p class="greeting text-center text-green-600">10 points to win the match</p>
+        </div>
+        <div class="win-card bg-blue-100 h-[70px] ml-5 w-[300px] rounded-xl hidden absolute">
+          <p class="text-center text-green-600 font-bold text-3xl">You Win!</p>
+          <p class="greeting text-center text-green-600">Hurray! 🥳 Congrats Roney</p>
+        </div>
+        <div class="lose-card bg-blue-100 h-[70px] ml-5 w-[300px] rounded-xl hidden absolute">
+          <p class="text-center font-bold text-3xl text-red-600">You Lose!</p>
+          <p class="greeting text-center text-red-600">Sorry! 😒 better Luck Next Time</p>
+        </div>
+        <div class="tie-card bg-blue-100 h-[70px] ml-5 w-[300px] rounded-xl hidden absolute">
+          <p class="text-center text-blue-600 font-bold text-3xl">Tie Break!</p>
+          <p class="greeting text-center text-green-600">Oops!🥲 Lets Try Again</p>
+        </div>
+      </div>
+
+      <div class="block h-[80px]"></div>
+      <button class="try-again-button absolute bottom-4 left-[9rem] rounded shadow-lg  hover:bg-blue-100 hover:shadow-xl hover:shadow-blue-300 bg-blue-300 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-gray-700 shadow-primary-3 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 motion-reduce:transition-none dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong transition-all duration-150 active:w-[109.20px] active:h-[36px] hover:w-[111px] hover:h-[37px]">Try Again</button>
+      
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
